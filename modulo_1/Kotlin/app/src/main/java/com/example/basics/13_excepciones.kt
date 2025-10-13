@@ -1,10 +1,12 @@
 package com.example.basics
 
-fun main(){
+fun main() {
     try {
-       val resultado= 8/0;
-    } catch (e: Exception){
+        val pasajeros = 10
+        val vuelos = 0
+        val promedio = pasajeros / vuelos
+    } catch (e: Exception) {
         println(e)
-        println("error en division")
+        println("No se puede calcular el promedio")
     }
 }
