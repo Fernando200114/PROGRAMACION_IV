@@ -1,7 +1,7 @@
 void main() {
   print("Tipos de Variables en Dart");
   
-  final Pasajero  pasajero = "Fernando LLulluna";
+  final String pasajero = "Fernando LLulluna";
   print(pasajero);
   
   String nombre = "Fernando";
