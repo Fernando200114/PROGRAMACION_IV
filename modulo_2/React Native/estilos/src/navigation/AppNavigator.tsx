@@ -22,8 +22,8 @@ export default function AppNavigator() {
           contentStyle: { backgroundColor: "#0d1117" },
         }}
       >
-        <Stack.Screen name="Users" component={UsersListScreen} options={{ title: "Usuarios" }} />
-        <Stack.Screen name="UserDetail" component={UserDetailScreen} options={{ title: "Detalle" }} />
+        <Stack.Screen name="Users" component={UsersListScreen} options={{ title: "Usuarios que ya resrevaron su vuelo" }} />
+        <Stack.Screen name="UserDetail" component={UserDetailScreen} options={{ title: "Detalle del usuario registrado" }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
