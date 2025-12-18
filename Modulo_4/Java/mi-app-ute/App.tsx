@@ -2,6 +2,9 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import TypeScriptDemo from "./src/screens/TypeScriptDemo";
 import AppButton from './src/components/AppButton';  // Ajusta la ruta si es necesario
+import { AppTitle }  from "@/components/common/AppTitle";
+import { Parte05Lab } from "./src/screens/Parte05Lab";
+
 
 export default function App() {
   return (
