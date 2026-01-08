@@ -1,20 +1,22 @@
-import { StyleSheet, View, SafeAreaView } from "react-native";
+import { StyleSheet, View, SafeAreaView, StatusBar } from "react-native";
 import { UseEffectAsyncDemo } from "@/screens/UseEffectAsyncDemo";
 import { Parte09Lab } from "@/screens/Parte09Lab";
-import { CallbackDemo } from "@/screens/src/screens/CallbackDemo";
+import { CallbackDemo } from "@/screens/CallbackDemo";
 import { Parte10Lab } from "@/screens/Parte10Lab";
 import { RefCounter } from "@/screens/RefCounter";
 import { FocusDemo } from "@/screens/FocusDemo";
 import { TimerRefDemo } from "@/screens/TimerRefDemo";
+import { Parte12Lab } from "@/screens/Parte12Lab";
+import { NavigationContainer } from "@react-navigation/native";
+import { AppNavigator } from "@/navigation/AppNavigator";
+
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      {/* Solo dejamos la pantalla que te interesa probar */}
-      <View style={styles.content}>
-        <TimerRefDemo />
-      </View>
-    </SafeAreaView>
+    <NavigationContainer>
+      <AppNavigator />
+      <StatusBar style="light" />
+    </NavigationContainer>
   );
 }
 
